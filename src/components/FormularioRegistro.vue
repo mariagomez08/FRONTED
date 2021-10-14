@@ -180,12 +180,12 @@ export default {
     Edad: "",
     EdadRules: [
       (v) => !!v || "Este elemento es necesario",
-      (v) => v > 2 || "la edad no debe tener más 2 elementos",
+      (v) => v.lenght <= 2 || "la edad no debe tener más 2 elementos",
     ],
     Telefono: "",
     TelefonoRules: [
       (v) => !!v || "Este elemento es necesario",
-      (v) => v < 10 || "El teléfono no debe tener más 10 elementos",
+      (v) => v.lenght <= 10 || "El teléfono no debe tener más 10 elementos",
     ],
     imagen: "",
     ImagenRules: [(v) => !!v || "Este elemento es necesario"],
