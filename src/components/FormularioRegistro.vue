@@ -152,15 +152,9 @@
       </v-row>
       <br />
       <br />
-      <v-btn :disabled="!valid" color="success" class="mr-4" @click="validar"
-        >Validar</v-btn
-      >
-      <v-btn color="error" class="mr-4" @click="limpiar"
-        >Limpiar formulario</v-btn
-      >
-      <v-btn color="warning" class="mr-4" @click="revalidar"
-        >Validar nuevamente</v-btn
-      >
+      <v-btn :disabled="!valid" color="success" class="mr-4" @click="validar">Validar</v-btn>
+      <v-btn color="error" class="mr-4" @click="limpiar">Limpiar formulario</v-btn>
+      <v-btn color="warning" class="mr-4" @click="revalidar">Validar nuevamente</v-btn>
       <v-btn color="primary" class="mr-4" @click="Guardar">Guardar</v-btn>
       <br />
       <br />

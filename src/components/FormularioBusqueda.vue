@@ -47,37 +47,36 @@
             required
             outlined
           ></v-select>
-
-          
         </v-col>
-      </v-row>
-      <!--PRUEBA CARTAsrc="https://cdn.vuetifyjs.com/images/cards/docks.jpg"-->
-          <div v-for="datos in datos"  :key="datos.id" id="inspire">
-            <v-card class="mx-auto" max-width="400">
-              <v-img
-                class="white--text align-end"
-                height="200px"
-                v-bind:src="`${datos.foto}`" 
-              >
-                <v-card-title >{{datos.nombremascota}}
-                </v-card-title>
-              </v-img>
-              <v-card-actions>
-                <v-btn color="orange" text> Ver mas </v-btn>
-              </v-card-actions>
-            </v-card>
-          </div>
+      </v-row>   
       <br />
       <br />
-      <v-btn :disabled="!valid" color="success" class="mr-4" @click="validar"
-        >Validar</v-btn
-      >
-      <v-btn color="error" class="mr-4" @click="limpiar"
-        >Limpiar formulario</v-btn
-      >
+      <v-btn :disabled="!valid" color="success" class="mr-4" @click="validar">Validar</v-btn>
+      <v-btn color="error" class="mr-4" @click="limpiar">Limpiar formulario</v-btn>
       <v-btn color="primary" class="mr-4" @click="buscar">Buscar</v-btn>
       <br />
       <br />
+       <!--PRUEBA CARTA"-->
+       <div v-for="datos in datos"  :key="datos.id" id="inspire">
+            <v-card class="mx-auto" max-width="400">
+              <v-img
+                class="white--text align-end"
+                height="300px"
+                v-bind:src="`${datos.foto}`" >
+                <v-card-title >{{datos.nombremascota}}</v-card-title>
+              </v-img>
+              <v-card-text class="titulos"><b>INFORMACIÓN DE LA MASCOTA</b>
+                <div>Edad: {{datos.edadmascota}}</div>
+                <div>Ciudad: {{datos.listaciudad}}</div>
+                <div>Genero: {{datos.genero}}</div>
+                            
+                <b>INFORMACIÓN DE DUEÑO</b>
+                <div>Nombre: {{datos.nombredueño}}</div>
+                <div>Numero: {{datos.telefonodueño}}</div>
+                <div>Email: {{datos.correodueño}}</div>
+              </v-card-text>
+            </v-card>
+          </div>
     </v-form>
   </div>
 </template>
@@ -170,6 +169,7 @@ export default {
         });
       this.$refs.form.reset();
     },
+    
   },
 };
 </script>
@@ -182,11 +182,11 @@ export default {
   justify-content: space-around;
   text-align: center;
   height: flex;
-  margin-right: 200px;
-  margin-left: 200px;
+  margin-right: 300px;
+  margin-left: 300px;
 }
 .titulos {
-  font-size: 25px;
+  font-size: 30px;
   text-align: center;
 }
 </style>
