@@ -22,12 +22,12 @@
         </v-col>
         <!---Columna 2-->
         <v-col cols="6" sm="6" md="6">
-          <!---Edad Macota-->
+          <!---Edad Mascota-->
           <v-text-field
             v-model="Edad"
             :counter="2"
             :rules="EdadRules"
-            label="Edad Mascota (Años)"
+            label="Edad Mascota"
             required
             outlined
           ></v-text-field>
@@ -181,7 +181,7 @@ export default {
       (v) => !!v || "Este elemento es necesario",
       (v) => v.lenght <= 10 || "El teléfono no debe tener más 10 elementos",
     ],
-    imagen: "",
+    imagen: [],
     ImagenRules: [(v) => !!v || "Este elemento es necesario"],
 
     email: "",
@@ -271,6 +271,8 @@ export default {
       formData.append("especie", this.especie);
       formData.append("correodueño", this.email);
       formData.append("foto", this.imagen);
+
+
       axios
         .post("http://localhost:3000/api/nueva-registro", formData, {
           headers: {
@@ -280,6 +282,7 @@ export default {
         .then((result) => {
           this.result = result.data;
           console.log(result.data);
+          alert("Guardado exitosamente!")
         });
     },
   },
@@ -288,14 +291,13 @@ export default {
 
 <style>
 .contenedor {
-  border: rgb(149, 235, 185) 5px inset;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   text-align: center;
   height: flex;
-  margin-right: 200px;
-  margin-left: 200px;
+  margin-right: 100px;
+  margin-left: 100px;
 }
 .titulos {
   font-size: 25px;

@@ -13,7 +13,7 @@
       <article>
         <h2>Otra Información</h2>
         <p>Politica YOSA</p>
-        <p>la plataforma no se hace responsable por publicaciones falsas</p>
+        <p>La plataforma no se hace responsable por publicaciones falsas.</p>
       </article>
       <article>
         <img src="../Images/logomision.png" width="200" height="100">

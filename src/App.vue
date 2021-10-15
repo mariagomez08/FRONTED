@@ -1,9 +1,6 @@
 <template>
   <v-app>
     <Menu/>
-    <br /> <!-- salto de linea-->
-    <br /> <!-- salto de linea-->
-    <br /> <!-- salto de linea-->
     <v-main>
       <router-view/>
     </v-main>

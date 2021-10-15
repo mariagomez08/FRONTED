@@ -1,9 +1,12 @@
 <template>
+  <div>
     <FormularioBusqueda/>
+  </div>
 </template>
 
 <script>
 import FormularioBusqueda from '../components/FormularioBusqueda.vue';
+
 export default {
   name: 'Buscar',
 

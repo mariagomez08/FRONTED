@@ -1,12 +1,11 @@
 <template>
         <div class="header-container">
             <div class="site-title">
-                <h1>良さ - yosa</h1>
+                <a href="/" style="color:black; font-size:50px; text-decoration:none">良さ - yosa</a>
             </div>
 
             <!-- Inicio menú navegación -->
-            <nav class="site-nav">
-                <a href="/">Inicio</a>
+            <nav class="site-nav" >
                 <a href="/registro">Registro</a>
                 <a href="/buscar">Buscar</a>
             </nav>

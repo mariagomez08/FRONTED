@@ -39,13 +39,13 @@
               <v-divider class="mx-4"></v-divider>
               <v-card-actions>
                 <v-btn
-                  href="./views/About.vue"
+                  href="/buscar"
                   style="
                     background: #198754;
                     color: #fff;
                     align: center;
                     position: center;
-                    left: 130px;
+                    left: 110px;
                   "
                   >Adoptar</v-btn
                 >
@@ -71,7 +71,7 @@
               <v-divider class="mx-4"></v-divider>
               <v-card-actions>
                 <v-btn
-                  href="../../public/Buscar.html"
+                  href="/registro"
                   style="
                     background: #198754;
                     color: #fff;
@@ -117,7 +117,7 @@
               <v-divider class="mx-4"></v-divider>
               <v-card-actions>
                 <v-btn
-                  href="../../public/Buscar.html"
+                  href="https://www.colombia.com/mascotas/noticias/picasso-perro-iba-a-ser-sacrificado-por-imperfeccion-en-rostro-317279"
                   style="
                     background: #198754;
                     color: #fff;
@@ -152,7 +152,7 @@
               <v-divider class="mx-4"></v-divider>
               <v-card-actions>
                 <v-btn
-                  href="../../public/Buscar.html"
+                  href="https://www.semana.com/sostenible/tendencias/articulo/dia-mundial-del-perro-por-que-se-celebra-el-21-de-julio/202142/#:~:text=Esta%20efeméride%20fue%20creada%20en,vida%20de%20los%20seres%20humanos.&text=A%20lo%20largo%20de%20la,acompañantes%20y%20servidores%20del%20hombre."
                   style="
                     background: #198754;
                     color: #fff;
@@ -185,7 +185,7 @@
               <v-divider class="mx-4"></v-divider>
               <v-card-actions>
                 <v-btn
-                  href="../../public/Buscar.html"
+                  href="https://www.infobae.com/america/colombia/2021/08/20/en-pandemia-se-logro-cifra-record-de-adopcion-de-perros-callejeros-en-bogota/#:~:text=Según%20datos%20del%20Instituto%20de,se%20considera%20una%20cifra%20récord."
                   style="
                     background: #198754;
                     color: #fff;
@@ -220,7 +220,7 @@
               <v-divider class="mx-4"></v-divider>
               <v-card-actions>
                 <v-btn
-                  href="../../public/Buscar.html"
+                  href="https://animal.mx/deportes/rumania-promueve-adopcion-perros-callejeros-en-partidos-de-futbol/"
                   style="
                     background: #198754;
                     color: #fff;
@@ -253,7 +253,7 @@
               <v-divider class="mx-4"></v-divider>
               <v-card-actions>
                 <v-btn
-                  href="../../public/Buscar.html"
+                  href="https://www.medellin.gov.co/irj/portal/medellin?NavigationTarget=contenido/10691-Medellin-habilita-WhatsApp-Center-para-adoptar-animales-de-compania-de-La-Perla#:~:text=El%20Centro%20de%20Bienestar%20Animal,y%20gatos%20disponibles%20para%20adopción."
                   style="
                     background: #198754;
                     color: #fff;
