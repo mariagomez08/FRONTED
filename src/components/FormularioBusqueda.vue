@@ -51,9 +51,9 @@
       </v-row>
       <br />
       <br />
-      <v-btn :disabled="!valid" color="success" class="mr-4" @click="validar" 
+      <!--<v-btn :disabled="!valid" color="success" class="mr-4" @click="validar" 
         >Validar</v-btn
-      >
+      >-->
       <v-btn color="error" class="mr-4" @click="limpiar"
         >Limpiar formulario</v-btn
       >
@@ -69,12 +69,12 @@
       >
     <v-card
       class="mx-auto"
-      max-width="344"
+      max-width="500"
     >
       <v-img
             class="white--text align-end"
             height="400px"
-            width="400px"
+            width="500px"
             v-bind:src="`${datos.foto}`"
       ></v-img>
   
@@ -188,9 +188,6 @@ export default {
   }),
 
   methods: {
-    validar() {
-      this.$refs.form.validate();
-    },
     limpiar() {
       this.$refs.form.reset();
     },

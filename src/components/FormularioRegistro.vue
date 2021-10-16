@@ -42,7 +42,7 @@
             class="SeleccionarEspecie"
             v-model="especie"
             :items="especies"
-            :rules="[(v) => !!v || 'Este elemeto es necesario']"
+            :rules="[(v) => !!v || 'Este elemento es necesario']"
             label="Especie"
             required
             outlined
@@ -152,9 +152,7 @@
       </v-row>
       <br />
       <br />
-      <v-btn :disabled="!valid" color="success" class="mr-4" @click="validar">Validar</v-btn>
       <v-btn color="error" class="mr-4" @click="limpiar">Limpiar formulario</v-btn>
-      <v-btn color="warning" class="mr-4" @click="revalidar">Validar nuevamente</v-btn>
       <v-btn color="primary" class="mr-4" @click="Guardar">Guardar</v-btn>
       <br />
       <br />
@@ -174,12 +172,10 @@ export default {
     Edad: "",
     EdadRules: [
       (v) => !!v || "Este elemento es necesario",
-      (v) => v.lenght <= 2 || "la edad no debe tener más 2 elementos",
     ],
     Telefono: "",
     TelefonoRules: [
       (v) => !!v || "Este elemento es necesario",
-      (v) => v.lenght <= 10 || "El teléfono no debe tener más 10 elementos",
     ],
     imagen: [],
     ImagenRules: [(v) => !!v || "Este elemento es necesario"],
@@ -251,14 +247,8 @@ export default {
   }),
 
   methods: {
-    validar() {
-      this.$refs.form.validate();
-    },
     limpiar() {
       this.$refs.form.reset();
-    },
-    revalidar() {
-      this.$refs.form.resetValidation();
     },
     Guardar() {
       const formData = new FormData(); //tipo de dato para guadar información y archivos juntos.
@@ -271,8 +261,6 @@ export default {
       formData.append("especie", this.especie);
       formData.append("correodueño", this.email);
       formData.append("foto", this.imagen);
-
-
       axios
         .post("http://localhost:3000/api/nueva-registro", formData, {
           headers: {
